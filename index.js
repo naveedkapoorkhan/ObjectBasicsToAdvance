@@ -48,3 +48,24 @@ const person2 = {
   },
 };
 //person1.introduceSelf();
+
+//This isn't hugely useful when you are writing out object literals by hand,
+// as using the object's name (person1 and person2) leads to the exact same 
+//result,but it will be essential when we start using constructors to create
+// more than one object from a single object definition,and that the subject
+// of the next section.
+//lets come to create object as much we want ok dynamically fill empty object
+ function createPerson(name,age){
+    let obj={};
+    obj.name=name;
+    obj.age=age;
+    obj.introduceOk=function(){
+    console.log(`hi i am ${this.name} and i am ${this.age} year old Fuck you!`);
+    };
+    return obj;
+ }
+ let Naveed=createPerson("naveed",20);
+ let Kabeer=createPerson("kabeer khann kapoor",25);
+ //Naveed.introduceOk();
+ Kabeer.introduceOk();
+  
