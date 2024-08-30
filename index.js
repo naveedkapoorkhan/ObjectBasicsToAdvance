@@ -3,17 +3,25 @@ const person={
 
     name:["naveed","kabeer"],
     age:24,
-    function(){
+    /*function can be also written like this or bio:function(){},if you keep both
+    function name function it will still work but function 2 will be call ok*/
+    bio(){
         console.log(`Hi i am ${this.name["0"]}`);
     }
     ,
-    function(){
+    introduceSelf(){
         console.log(`${this.name["0"]} ${this.name["1"]} is ${this.age} years old!`);
     },
     
-    
+    };
+/*call object property by bracket notation*/
+const student={
+    name:"naveed",
+    age:23,
 };
 
-person.function();
-let x=person["age"]=23;
-console.log(x);
+function logProperty(StudentName){
+    console.log(student[StudentName]);
+}
+ logProperty("name");
+ logProperty("age");
