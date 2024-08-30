@@ -23,5 +23,13 @@ const student={
 function logProperty(StudentName){
     console.log(student[StudentName]);
 }
- logProperty("name");
- logProperty("age");
+ //logProperty("name");
+ //logProperty("age");
+function App(app){
+    return(
+        console.log(app)
+    );
+   
+}
+//App(2);
+
