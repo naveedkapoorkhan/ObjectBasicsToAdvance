@@ -14,6 +14,6 @@ const person={
     
 };
 
-
+person.function();
 let x=person["age"]=23;
 console.log(x);
